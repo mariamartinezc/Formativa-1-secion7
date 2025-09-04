@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ejemplos con Javascript</title>
+
+</head>
+
+<body>
+
+  <h1 id="titulo">
+
+    Titulo original
+
+  </h1>
+
+  
+
+  <button onclick="cambiarTitulo()">Cambiar titulo</button>
+
+  
+
+  <hr>
+
+
+
+  <label for="lbl_valor_1">Ingrese un valor</label>
+
+  <input type="text" id="valor1" placeholder="ingrese un valor">
+
+
+
+  <button onclick="obtenerValor()">obtenerValor</button>
+
+
+
+<hr>
+
+<h1>Actividad</h1>
+
+  <label for="lbl_valor_1">Ingrese un valor</label>
+
+  <input type="text" id="valor2" placeholder="ingrese un valor">
+
+
+
+  <label for="lbl_valor_2">Ingrese otro valor</label>
+
+  <input type="text" id="valor3" placeholder="ingrese otro valor">
+
+  <button onclick="sumarDosValores()">sumar</button>
+
+  
+
+  <script>
+
+    console.log("Hola mundo");
+
+  
+
+    function cambiarTitulo(){
+
+      console.log("Ingrese a la funcion");
+
+      document.getElementById("titulo").innerHTML = "Otro titulo"
+
+      console.log("Termine la pega")
+
+    }
+
+
+
+    function obtenerValor(){
+
+      var numero = document.getElementById("valor1").value;
+
+      console.log(numero);
+
+
+
+      var resultado = numero + 10;
+
+      console.log(resultado);
+
+
+
+      resultado = parseInt(numero) + 10;
+
+      console.log(resultado);
+
+    }
+
+
+
+    function sumarDosValores(){
+
+      var numero1 = document.getElementById("valor2").value;
+
+      console.log(numero1);
+
+
+
+      var numero2 = document.getElementById("valor3").value;
+
+      console.log(numero2);
+
+
+
+      var resultadosuma = parseInt(numero1) + parseInt(numero2);
+
+
+
+      console.log(resultadosuma);
+
+
+
+      document.getElementById("titulo").innerHTML = resultadosuma
+
+
+
+    }
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
