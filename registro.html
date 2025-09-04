@@ -14,39 +14,45 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg bg-success " data-bs-theme="dark">
             <div class="container-fluid">
-                <img src="assets/LogoMIAU&GUAU.png" alt="Logo GUAU&MIAU" width="200px"
-                    class="d-inline-block align-text-top">
-                <hr>
-                <a class="navbar-brand" href="#"> GUAU&MIAU</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/imagen/LogoMIAU&GUAU.png" alt="Logo" width="150px">
+                    MIAU&GUAU
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                
                 </button>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
 
+                    </ul>
                     <!--seccion de login y resgistro-->
-                    <ul class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <li class="navbar-nav">
-                        <li class="nav-link active" aria-current="page" href="#">Home</li>
-                        <li class="nav-link" href="#">Productos</li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
                         </li>
                     </ul>
+                </div>
             </div>
-            <hr>
         </nav>
+
 
     </header>
     <main>
@@ -66,15 +72,15 @@
                         <label for="correo" class="form-label">Correo</label>
                         <input type="text" class="form-control" id="correo" aria-describedby="emailHelp">
                     </div>
-                     <div class="mb-3">
+                    <div class="mb-3">
                         <label for="password1" class="form-label">Contraseña</label>
                         <input type="text" class="form-control" id="pass" aria-describedby="emailHelp">
                     </div>
-                      <div class="mb-3">
+                    <div class="mb-3">
                         <label for="password2" class="form-label">Repite Contraseña</label>
                         <input type="text" class="form-control" id="password2" aria-describedby="emailHelp">
                     </div>
-                    <div class="mb-3"> 
+                    <div class="mb-3">
                         <button class="btn btn-success">Registro</button>
                         <button class="btn btn-secondary">Limpiar</button>
 
